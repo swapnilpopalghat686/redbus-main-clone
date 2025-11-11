@@ -16,7 +16,7 @@ export default function AuthPage({ onLoginSuccess }) {
   }, []);
 
   const handleSignup = () => {
-    fetch("http://localhost:5009/signup", {
+    fetch("https://redbus-clone-1-mjlw.onrender.com/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(user),
